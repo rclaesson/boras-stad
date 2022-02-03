@@ -1,0 +1,807 @@
+2022-01-18 16:16:14 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-19 09:08:11 [localhost] HTTP: HTTPSConnectionPool(host='localhost123', port=443): Max retries exceeded with url: /api/filter/query?query=%5Bservices%5D%20host.name%20=%20%22SLA_Service_Infrastructure%22%0A%20and%20state%20=%202%20and%20acknowledged%20=%200%20and%20scheduled_downtime_depth%20=%200%20and%20host.scheduled_downtime_depth%20=%200&columns=host.name,description,last_time_ok,plugin_output (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f4fa41bce80>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+2022-01-19 09:10:13 [localhost] HTTP: HTTPSConnectionPool(host='localhost123', port=443): Max retries exceeded with url: /api/filter/query?query=%5Bservices%5D%20host.name%20=%20%22SLA_Service_Infrastructure%22%0A%20and%20state%20=%202%20and%20acknowledged%20=%200%20and%20scheduled_downtime_depth%20=%200%20and%20host.scheduled_downtime_depth%20=%200&columns=host.name,description,last_time_ok,plugin_output (Caused by NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f051a257e80>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+2022-01-19 09:10:23 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-19 09:10:23 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-19 09:10:23 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 13:34:18 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 13:34:18 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 13:34:18 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 13:37:04 [localhost] BUSINESS SERVICES: Issues found with parent objects. Will not create ticket.
+2022-01-25 13:37:36 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 13:37:36 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 13:37:36 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 13:40:17 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 13:40:17 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 13:40:17 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:33:41 [localhost] BUSINESS SERVICES: Issues found with parent objects. Will not create ticket.
+2022-01-25 14:35:49 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:35:49 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:35:49 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:36:29 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:36:29 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:36:29 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:43:22 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:43:22 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:43:22 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:44:53 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:44:53 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:44:53 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:48:15 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:48:15 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:48:15 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:52:57 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:52:57 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:52:57 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:55:21 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:55:21 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 14:55:21 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 14:57:22 [localhost] TICKET CREATED: Service CRIT-Business on host SLA_Service_Applikation
+2022-01-25 14:57:22 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 15:02:39 [localhost] TICKET CREATED: Service critical service on host SLA_Service_Applikation
+2022-01-25 15:02:39 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 15:10:12 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:10:12 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 15:14:05 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:14:05 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:17:57 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:17:57 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:18:03 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:18:03 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:18:27 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:18:27 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:19:33 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:19:53 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:19:53 [localhost] TICKET CREATED: Service infra critical service on host monitor
+2022-01-25 15:20:19 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:20:19 [localhost] TICKET CREATED: Service infra critical service on host monitor
+2022-01-25 15:21:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:21:02 [localhost] TICKET CREATED: Service infra critical service on host monitor
+2022-01-25 15:21:31 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:21:31 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:21:43 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:21:43 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:22:23 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:22:23 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:23:09 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:23:09 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:23:28 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:23:28 [localhost] TICKET CREATED: Service infra critical service on host monitor
+2022-01-25 15:26:42 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:26:42 [localhost] INFRASTRUCTURE: No issues was found.
+2022-01-25 15:27:27 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:27:27 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:27:53 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:27:53 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:29:58 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:29:58 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:30:25 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:30:25 [localhost] TICKET CREATED: Service infra critical service on host monitor
+2022-01-25 15:30:45 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:30:45 [localhost] INFRASTRUCTURE: Service infra critical service on host monitor has not passed the duration threshold. Will not create ticket.
+2022-01-25 15:40:49 [localhost] BUSINESS SERVICES: No issues was found.
+2022-01-25 15:40:49 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-01 09:17:36 [localhost] TICKET CREATED: Service ASSA - Lås och passagesystem on host SLA_Service_Applikation
+2022-02-01 09:17:36 [localhost] TICKET CREATED: Service Assa Arx on host SLA_Service_Applikation
+2022-02-01 09:17:36 [localhost] TICKET ERROR: Ticket already exists for Serix on host SLA_Service_Applikation. Will not create new ticket.
+2022-02-01 09:17:36 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:03:55 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:03:55 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:10:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:10:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:11:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:11:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:12:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:12:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:13:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:13:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:14:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:14:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:15:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:15:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:16:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:16:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:17:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:17:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:18:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:18:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:19:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:19:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:20:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:20:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:21:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:21:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:22:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:22:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:23:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:23:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:24:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:24:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:25:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:25:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:25:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:25:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:26:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:26:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:27:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:27:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:28:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:28:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:29:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:29:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:30:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:30:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:31:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:31:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:32:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:32:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:33:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:33:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:34:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:34:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:35:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:35:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:36:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:36:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:37:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:37:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:38:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:38:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:39:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:39:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:40:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:40:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:41:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:41:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:41:21 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:41:21 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:42:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:42:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:43:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:43:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:44:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:44:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:45:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:45:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:46:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:46:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:47:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:47:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:48:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:48:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:49:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:49:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:49:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:50:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:50:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:50:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:51:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:51:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:51:01 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:52:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:52:02 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:52:02 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:53:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:53:02 [localhost] INFRASTRUCTURE: Could not find email address for contact Teams Integration. Will not create ticket(s).
+2022-02-03 08:54:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:54:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:55:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:55:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:56:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:56:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:57:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:57:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:58:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:58:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 08:59:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 08:59:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:00:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:00:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:01:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:01:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:02:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:02:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:03:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:03:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:04:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:04:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:05:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:05:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:06:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:06:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:07:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:07:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:08:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:08:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:09:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:09:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:10:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:10:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:11:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:11:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:12:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:12:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:13:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:13:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:14:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:14:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:15:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:15:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:16:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:16:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:17:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:17:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:18:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:18:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:19:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:19:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:20:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:20:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:21:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:21:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:22:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:22:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:23:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:23:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:24:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:24:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:25:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:25:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:26:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:26:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:27:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:27:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:28:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:28:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:29:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:29:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:30:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:30:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:31:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:31:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:32:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:32:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:33:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:33:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:34:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:34:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:35:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:35:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:36:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:36:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:37:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:37:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:38:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:38:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:39:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:39:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:40:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:40:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:41:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:41:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:42:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:42:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:43:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:43:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:44:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:44:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:45:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:45:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:46:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:46:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:47:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:47:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:48:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:48:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:49:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:49:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:50:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:50:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:51:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:51:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:52:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:52:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:53:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:53:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:54:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:54:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:55:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:55:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:56:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:56:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:57:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:57:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:58:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:58:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 09:59:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 09:59:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:00:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:00:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:01:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:01:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:02:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:02:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:03:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:03:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:04:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:04:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:05:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:05:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:06:01 [localhost] BUSINESS SERVICES: Service Komma on host SLA_Service_Applikation has not passed the duration threshold. Will not create ticket.
+2022-02-03 10:06:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:07:01 [localhost] BUSINESS SERVICES: Service Komma on host SLA_Service_Applikation has not passed the duration threshold. Will not create ticket.
+2022-02-03 10:07:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:08:01 [localhost] BUSINESS SERVICES: Service Komma on host SLA_Service_Applikation has not passed the duration threshold. Will not create ticket.
+2022-02-03 10:08:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:09:01 [localhost] BUSINESS SERVICES: Service Komma on host SLA_Service_Applikation has not passed the duration threshold. Will not create ticket.
+2022-02-03 10:09:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:10:01 [localhost] BUSINESS SERVICES: Service Komma on host SLA_Service_Applikation has not passed the duration threshold. Will not create ticket.
+2022-02-03 10:10:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:11:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:11:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:12:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:12:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:13:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:13:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:14:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:14:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:15:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:15:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:16:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:16:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:17:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:17:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:18:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:18:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:19:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:19:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:20:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:20:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:21:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:21:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:22:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:22:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:23:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:23:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:24:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:24:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:25:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:25:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:26:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:26:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:27:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:27:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:28:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:28:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:29:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:29:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:30:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:30:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:31:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:31:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:32:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:32:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:33:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:33:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:34:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:34:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:35:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:35:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:36:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:36:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:37:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:37:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:38:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:38:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:39:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:39:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:40:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:40:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:41:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:41:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:42:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:42:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:43:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:43:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:44:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:44:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:45:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:45:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:46:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:46:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:47:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:47:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:48:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:48:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:49:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:49:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:50:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:50:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:51:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:51:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:52:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:52:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:53:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:53:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:54:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:54:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:55:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:55:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:56:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:56:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:57:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:57:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:58:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:58:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 10:59:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 10:59:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:00:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:00:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:01:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:01:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:02:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:02:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:03:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:03:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:04:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:04:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:05:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:05:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:06:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:06:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:07:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:07:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:08:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:08:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:09:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:09:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:10:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:10:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:11:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:11:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:12:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:12:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:13:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:13:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:14:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:14:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:15:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:15:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:16:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:16:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:17:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:17:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:18:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:18:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:19:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:19:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:20:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:20:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:21:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:21:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:22:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:22:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:23:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:23:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:24:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:24:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:25:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:25:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:26:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:26:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:27:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:27:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:28:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:28:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:29:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:29:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:30:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:30:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:31:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:31:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:32:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:32:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:33:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:33:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:34:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:34:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:35:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:35:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:36:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:36:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:37:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:37:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:38:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:38:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:39:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:39:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:40:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:40:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:41:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:41:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:42:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:42:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:43:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:43:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:44:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:44:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:45:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:45:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:46:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:46:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:47:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:47:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:48:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:48:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:49:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:49:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:50:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:50:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:51:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:51:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:52:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:52:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:53:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:53:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:54:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:54:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:55:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:55:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:56:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:56:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:57:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:57:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:58:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:58:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 11:59:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 11:59:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:00:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:00:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:01:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:01:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:02:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:02:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:03:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:03:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:04:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:04:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:05:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:05:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:06:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:06:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:07:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:07:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:08:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:08:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:09:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:09:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:10:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:10:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:11:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:11:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:12:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:12:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:13:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:13:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:14:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:14:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:15:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:15:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:16:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:16:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:17:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:17:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:18:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:18:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:19:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:19:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:20:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:20:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:21:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:21:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:22:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:22:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:23:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:23:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:24:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:24:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:25:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:25:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:26:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:26:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:27:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:27:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:28:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:28:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:29:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:29:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:30:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:30:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:31:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:31:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:32:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:32:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:33:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:33:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:34:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:34:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:35:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:35:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:36:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:36:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:37:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:37:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:38:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:38:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:39:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:39:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:40:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:40:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:41:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:41:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:42:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:42:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:43:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:43:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:44:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:44:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:45:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:45:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:46:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:46:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:47:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:47:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:48:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:48:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:49:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:49:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:50:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:50:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:51:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:51:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:52:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:52:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:53:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:53:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:54:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:54:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:55:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:55:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:56:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:56:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:57:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:57:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:58:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:58:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 12:59:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 12:59:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:00:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:00:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:01:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:01:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:02:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:02:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:03:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:03:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:04:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:04:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:05:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:05:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:06:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:06:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:07:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:07:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:08:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:08:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:09:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:09:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:10:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:10:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:11:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:11:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:12:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:12:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:13:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:13:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:14:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:14:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:15:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:15:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:16:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:16:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:17:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:17:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:18:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:18:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:19:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:19:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:20:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:20:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:21:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:21:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:22:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:22:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:23:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:23:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:24:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:24:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:25:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:25:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:26:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:26:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:27:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:27:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:28:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:28:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:29:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:29:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:30:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:30:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:31:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:31:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:32:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:32:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:33:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:33:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:34:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:34:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:35:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:35:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:36:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:36:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:37:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:37:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:38:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:38:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:39:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:39:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:40:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:40:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:41:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:41:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:42:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:42:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:43:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:43:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:44:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:44:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:45:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:45:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:46:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:46:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:47:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:47:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:48:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:48:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:49:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:49:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:50:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:50:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:51:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:51:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:52:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:52:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:53:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:53:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:54:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:54:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:55:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:55:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:56:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:56:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:57:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:57:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:58:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:58:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 13:59:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 13:59:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 14:00:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 14:00:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 14:01:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 14:01:01 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 14:02:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 14:02:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 14:03:02 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 14:03:02 [localhost] INFRASTRUCTURE: No issues was found.
+2022-02-03 14:04:01 [localhost] BUSINESS SERVICES: No issues was found.
+2022-02-03 14:04:01 [localhost] INFRASTRUCTURE: No issues was found.
