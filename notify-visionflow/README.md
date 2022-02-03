@@ -7,7 +7,7 @@
 * python-requests
 * python-zeep
 * OP5 API credentials
-* VisionFlow credentials
+* VisionFlow API credentials
 
 ### Instructions
 _notify-visionflow.py_ reads two files to sort out which host groups and BSM-hosts contains the infrastructure:
