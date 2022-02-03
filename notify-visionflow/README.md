@@ -25,4 +25,4 @@ Apply the VisionFlow e-mail address to the field **address1** in OP5, and omit t
 Using the **email** field initializes standard OP5 notifications, which will cause duplicate tickets in VisionFlow.
 
 ### Example usage
-./notify-visionflow.py -oh <op5host> -ou <op5user> -op <op5pass> -vh <vflowhost> -vu <vflowuser> -vp <vflowpass> -d <duration, in minutes>
+    ./notify-visionflow.py -oh <op5host> -ou <op5user> -op <op5pass> -vh <vflowhost> -vu <vflowuser> -vp <vflowpass> -d <duration, in minutes>
