@@ -129,7 +129,7 @@ if req_business_alert:
 
       # Convert timestamp to readable format
       alert_timestamp = int(last_time_ok)
-      alert_timestamp = datetime.datetime.utcfromtimestamp(alert_timestamp).strftime('%Y-%m-%d %H:%M:%S')
+      alert_timestamp = datetime.datetime.fromtimestamp(alert_timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
       # Check acknowledgement
       if str(item["acknowledged"]) == "1":
@@ -174,7 +174,7 @@ if req_infra_alert:
 
     # Convert timestamp to readable format
     alert_timestamp = int(last_time_ok)
-    alert_timestamp = datetime.datetime.utcfromtimestamp(alert_timestamp).strftime('%Y-%m-%d %H:%M:%S')
+    alert_timestamp = datetime.datetime.fromtimestamp(alert_timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
     # Check acknowledgement
     if str(item["acknowledged"]) == "1":
