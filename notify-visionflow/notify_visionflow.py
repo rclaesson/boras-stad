@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 # Modules
-import requests, smtplib, argparse, urllib3, datetime, re
+import requests, smtplib, argparse, urllib3, datetime, re, json
 from email.message import EmailMessage
 from zeep import Client
 from zeep.transports import Transport
@@ -26,11 +26,14 @@ args = parser.parse_args()
 # Timestamps
 current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 duration_time_ago = datetime.datetime.now() - datetime.timedelta(minutes=args.duration)
-duration_time_ago = duration_time_ago.strftime("%Y-%m-%d %H:%M:%S")
 
 # Hostgroups used in OP5
 f = open("/opt/plugins/custom/notify-visionflow/hostgroups_alert.lst", "r")
 hostgroups_alert = f.readlines()
+f.close()
+# Business Services used in OP5
+f = open("/opt/plugins/custom/notify-visionflow/bs_hosts.lst", "r")
+bs_hosts = f.readlines()
 f.close()
 
 # OP5 API queries
@@ -43,7 +46,7 @@ def op5_api_query(filter_url):
   return query
 
 # Check ticket existence
-def check_ticket(hostname, service):
+def check_ticket(hostname, service, state):
   wsdl = "http://" + args.vflowhost + "/api/docs/service.wsdl?class=vf?namespace=ws"
   proxy_url = "http://" + args.vflowhost + "/service/VisionProject-v2/VisionProjectWebServiceService"
 
@@ -60,23 +63,15 @@ def check_ticket(hostname, service):
   # Check if tickets exists
   if result:
     for ticket in result:
-      ticket_host_and_service_raw = (ticket["name"])
-      try:
-        ticket_host_and_service = re.findall(r'\'(.*?)\'', ticket_host_and_service_raw)
-        ticket_host_name = str(ticket_host_and_service[1])
-        ticket_service_name = str(ticket_host_and_service[0])
-        ticket_host_and_service = ticket_host_name + ";" + ticket_service_name
-        op5_host_and_service = hostname + ";" + service
+      ticket_host_and_service = (ticket["name"])
+      op5_host_and_service = "[OP5] " + service + " on " + hostname + " is " + state
 
-        global ticket_creation
-        if ticket_host_and_service == op5_host_and_service:
-          print (current_timestamp + " [localhost] TICKET ERROR: Ticket already exists for " + ticket_service_name + " on host " + ticket_host_name + ". Will not create new ticket.", file = logfile)
-          ticket_creation = 0
-        else:
-          ticket_creation = 1
-
-      except:
-        print (current_timestamp + " [localhost] TICKET ERROR: Could not match '" + str(ticket_host_and_service_raw) + "' with an object in OP5 Monitor. Will not create ticket.", file = logfile)
+      global ticket_creation
+      if ticket_host_and_service == op5_host_and_service:
+        print (current_timestamp + " [localhost] TICKET INFO: Ticket already exists for " + service + " on host " + hostname + ". Will not create new ticket.", file = logfile)
+        ticket_creation = 0
+      else:
+        ticket_creation = 1
 
     return ticket_creation
 
@@ -86,12 +81,12 @@ def check_ticket(hostname, service):
     return ticket_creation
 
 # Create ticket
-def create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email):
-  ticket_subject = "[OP5] " + service + " on " + hostname + " is CRITICAL"
+def create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email, state):
+  ticket_subject = "[OP5] " + service + " on " + hostname + " is " + state
   ticket_message = "ITRS OP5 Monitor \n\n" \
-  "Service: " + service + " on host " + hostname + " has passed the CRITICAL threshold. \n\n" \
+  "Service: " + service + " on host " + hostname + " has passed the " + state + " threshold. \n\n" \
   "Output: " + plugin_output + "\n" \
-  "Alert detected at: " + alert_timestamp + "\n\n" \
+  "Alert detected at: " + str(alert_timestamp) + "\n\n" \
   "Acknowledgement: " + ack_msg
   msg = EmailMessage()
   msg.set_content(ticket_message)
@@ -104,32 +99,37 @@ def create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, co
   s.quit()
 
 # Get alerts from OP5 Monitor Business Services
-f = open("/opt/plugins/custom/notify-visionflow/bs_hosts.lst", "r")
-bs_hosts = f.readlines()
-f.close()
-
+req_business_alert_list = []
 for bs_alert in bs_hosts:
-  req_business_alert = op5_api_query("[services] host.name = " + bs_alert + " and state = 2 and state_type = 1 and scheduled_downtime_depth = 0 and host.scheduled_downtime_depth = 0&columns=host.name,description,last_time_ok,plugin_output,acknowledged,comments_with_info,contacts")
+  req_business_alert = op5_api_query("[services] host.name = " + bs_alert + " and state = 2 and state_type = 1 and scheduled_downtime_depth = 0 and host.scheduled_downtime_depth = 0&columns=host.name,description,last_time_ok,plugin_output,acknowledged,comments_with_info,contacts,state")
   req_business_alert = req_business_alert.json()
+  if req_business_alert:
+    req_business_alert_list.append(req_business_alert)
 
 # Get alerts from OP5 Monitor Hostgroups
+req_infra_alert_list = []
 for hg_alert in hostgroups_alert:
-  req_infra_alert = op5_api_query("[services] host in " + hg_alert + " and state = 2 and state_type = 1 and scheduled_downtime_depth = 0 and host.scheduled_downtime_depth = 0&columns=host.name,description,last_time_ok,plugin_output,acknowledged,comments_with_info,contacts")
+  req_infra_alert = op5_api_query("[services] host in " + hg_alert + " and (state = 1 or state = 2) and state_type = 1 and scheduled_downtime_depth = 0 and host.scheduled_downtime_depth = 0&columns=host.name,description,last_time_ok,plugin_output,acknowledged,comments_with_info,contacts,state")
   req_infra_alert = req_infra_alert.json()
+  if req_infra_alert:
+    req_infra_alert_list.append(req_infra_alert)
 
 # Business services alerts
-if req_business_alert:
-  if not req_infra_alert:
-    for item in req_business_alert:
+if req_business_alert_list:
+  if not req_infra_alert_list:
+    for item in req_business_alert_list[0]:
       hostname = str(item["host"]["name"])
       service = str(item["description"])
       last_time_ok = item["last_time_ok"]
       plugin_output = str(item["plugin_output"])
-      contacts = item["contacts"]
+      state = item["state"]
+      if state == 1:
+        state = "WARNING"
+      elif state == 2:
+        state = "CRITICAL"
 
       # Convert timestamp to readable format
-      alert_timestamp = int(last_time_ok)
-      alert_timestamp = datetime.datetime.fromtimestamp(alert_timestamp).strftime('%Y-%m-%d %H:%M:%S')
+      alert_timestamp = datetime.datetime.fromtimestamp(last_time_ok)
 
       # Check acknowledgement
       if str(item["acknowledged"]) == "1":
@@ -146,17 +146,17 @@ if req_business_alert:
         contact_email = contact_email[0]["address1"]
 
       # Check duration
-      if alert_timestamp > duration_time_ago:
-        # Check ticket existence
-        check_ticket(hostname, service)
-        # Create ticket
-        if ticket_creation == 1:
-          # Check contact existence
-          if not contact_email:
-            print (current_timestamp + " [localhost] BUSINESS SERVICES: Could not find email address for contact " + contact + ". Will not create ticket.", file = logfile)
-          else:
-            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email)
+      if alert_timestamp < duration_time_ago:
+        # Check contact existence
+        if contact_email:
+          # Check ticket existence
+          check_ticket(hostname, service, state)
+          if ticket_creation == 1:
+            # Create ticket
+            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email, state)
             print (current_timestamp + " [localhost] TICKET CREATED: Service " + service + " on host " + hostname, file = logfile)
+        else:
+          print (current_timestamp + " [localhost] BUSINESS SERVICES: Could not find email address for contact " + contact + ". Will not create ticket.", file = logfile)
       else:
         print (current_timestamp + " [localhost] BUSINESS SERVICES: Service " + service + " on host " + hostname + " has not passed the duration threshold. Will not create ticket.", file = logfile)
   else:
@@ -165,16 +165,21 @@ else:
   print (current_timestamp + " [localhost] BUSINESS SERVICES: No issues was found.", file = logfile)
 
 # Infrastructure alerts
-if req_infra_alert:
-  for item in req_infra_alert:
+if req_infra_alert_list:
+  # Sort items
+  for item in req_infra_alert_list[0]:
     hostname = str(item["host"]["name"])
     service = str(item["description"])
     last_time_ok = item["last_time_ok"]
     plugin_output = str(item["plugin_output"])
+    state = item["state"]
+    if state == 1:
+      state = "WARNING"
+    elif state == 2:
+      state = "CRITICAL"
 
-    # Convert timestamp to readable format
-    alert_timestamp = int(last_time_ok)
-    alert_timestamp = datetime.datetime.fromtimestamp(alert_timestamp).strftime('%Y-%m-%d %H:%M:%S')
+    # Convert timestamp to datetime-object
+    alert_timestamp = datetime.datetime.fromtimestamp(last_time_ok)
 
     # Check acknowledgement
     if str(item["acknowledged"]) == "1":
@@ -196,17 +201,17 @@ if req_infra_alert:
       print (current_timestamp + " [localhost] INFRASTRUCTURE: Host-object " + hostname + " is down. Will not create tickets for service-objects.", file = logfile)
     else:
       # Check duration
-      if alert_timestamp > duration_time_ago:
-        # Check ticket existence
-        check_ticket(hostname, service)
-        # Create ticket
-        if ticket_creation == 1:
-          # Check contact existence
-          if not contact_email:
-            print (current_timestamp + " [localhost] INFRASTRUCTURE: Could not find email address for contact " + contact + ". Will not create ticket(s).", file = logfile)
-          else:
-            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email)
+      if alert_timestamp < duration_time_ago:
+        # Check contact existence
+        if contact_email:
+          # Check ticket existence
+          check_ticket(hostname, service, state)
+          if ticket_creation == 1:
+            # Create ticket
+            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email, state)
             print (current_timestamp + " [localhost] TICKET CREATED: Service " + service + " on host " + hostname, file = logfile)
+        else:
+          print (current_timestamp + " [localhost] INFRASTRUCTURE: Could not find email address for contact " + contact + ". Will not create ticket(s).", file = logfile)
       else:
          print (current_timestamp + " [localhost] INFRASTRUCTURE: Service " + service + " on host " + hostname + " has not passed the duration threshold. Will not create ticket.", file = logfile)
 else:
