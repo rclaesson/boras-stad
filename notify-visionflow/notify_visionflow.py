@@ -157,8 +157,7 @@ if req_business_alert_list:
           check_ticket(hostname, service, state)
           if ticket_creation == 1:
             # Create ticket
-            print ("I will create ticket for " + service)
-            #create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email_address, state)
+            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email_address, state)
             print (current_timestamp + " [localhost] TICKET CREATED: Service " + service + " on host " + hostname, file = logfile)
         else:
           print (current_timestamp + " [localhost] BUSINESS SERVICES: Could not find email address for contact " + contact + ". Will not create ticket.", file = logfile)
