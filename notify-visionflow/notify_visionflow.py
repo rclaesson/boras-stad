@@ -62,17 +62,19 @@ def check_ticket(hostname, service, state):
 
   # Check if tickets exists
   if result:
+    op5_host_and_service = "[OP5] " + service + " on " + hostname + " is " + state
+    global ticket_creation
+    ticket_host_and_service = []
+
     for ticket in result:
-      ticket_host_and_service = (ticket["name"])
-      op5_host_and_service = "[OP5] " + service + " on " + hostname + " is " + state
+      ticket_host_and_service.append(ticket["name"])
 
-      global ticket_creation
-      if ticket_host_and_service == op5_host_and_service:
-        print (current_timestamp + " [localhost] TICKET INFO: Ticket already exists for " + service + " on host " + hostname + ". Will not create new ticket.", file = logfile)
-        ticket_creation = 0
-      else:
-        ticket_creation = 1
-
+    if op5_host_and_service in ticket_host_and_service:
+      print (current_timestamp + " [localhost] TICKET INFO: Ticket already exists for " + service + " on host " + hostname + ". Will not create new ticket.", file = logfile)
+      ticket_creation = 0
+    else:
+      ticket_creation = 1
+        
     return ticket_creation
 
   # If no tickets were found, create new ticket
@@ -155,7 +157,8 @@ if req_business_alert_list:
           check_ticket(hostname, service, state)
           if ticket_creation == 1:
             # Create ticket
-            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email_address, state)
+            print ("I will create ticket for " + service)
+            #create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email_address, state)
             print (current_timestamp + " [localhost] TICKET CREATED: Service " + service + " on host " + hostname, file = logfile)
         else:
           print (current_timestamp + " [localhost] BUSINESS SERVICES: Could not find email address for contact " + contact + ". Will not create ticket.", file = logfile)
