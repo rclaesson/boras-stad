@@ -144,16 +144,18 @@ if req_business_alert_list:
         contact_email = op5_api_query("[contacts] name = " + '"' + contact + '"' + "&columns=address1")
         contact_email = contact_email.json()
         contact_email = contact_email[0]["address1"]
+        if contact_email:
+          contact_email_address = contact_email
 
       # Check duration
       if alert_timestamp < duration_time_ago:
         # Check contact existence
-        if contact_email:
+        if contact_email_address:
           # Check ticket existence
           check_ticket(hostname, service, state)
           if ticket_creation == 1:
             # Create ticket
-            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email, state)
+            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email_address, state)
             print (current_timestamp + " [localhost] TICKET CREATED: Service " + service + " on host " + hostname, file = logfile)
         else:
           print (current_timestamp + " [localhost] BUSINESS SERVICES: Could not find email address for contact " + contact + ". Will not create ticket.", file = logfile)
@@ -194,6 +196,8 @@ if req_infra_alert_list:
       contact_email = op5_api_query("[contacts] name = " + '"' + contact + '"' + "&columns=address1")
       contact_email = contact_email.json()
       contact_email = contact_email[0]["address1"]
+      if contact_email:
+        contact_email_address = contact_email
 
     # Check if host-object is not down
     host_is_down = op5_api_query("[hosts] name = " + hostname + " and state = 1")
@@ -203,12 +207,12 @@ if req_infra_alert_list:
       # Check duration
       if alert_timestamp < duration_time_ago:
         # Check contact existence
-        if contact_email:
+        if contact_email_address:
           # Check ticket existence
           check_ticket(hostname, service, state)
           if ticket_creation == 1:
             # Create ticket
-            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email, state)
+            create_ticket(hostname, service, alert_timestamp, plugin_output, ack_msg, contact_email_address, state)
             print (current_timestamp + " [localhost] TICKET CREATED: Service " + service + " on host " + hostname, file = logfile)
         else:
           print (current_timestamp + " [localhost] INFRASTRUCTURE: Could not find email address for contact " + contact + ". Will not create ticket(s).", file = logfile)
